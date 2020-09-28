@@ -103,7 +103,7 @@ public class UserMealsUtil {
                                     return result;
                                 }
                         )),
-                        localDateListMap -> {
+                        (Map<LocalDate, List<UserMealWithExcess>> localDateListMap) -> {
                             List<UserMealWithExcess> list = new ArrayList<>();
 
                             for (Map.Entry<LocalDate, List<UserMealWithExcess>> entry : localDateListMap.entrySet()) {
